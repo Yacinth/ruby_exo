@@ -1,12 +1,20 @@
-mail = []
-x = 1
-
-while ( x <= 50 )
-if ( x >= 0 && x=2 && x = 4 && x = 8 )
-mail << "jean.dupont.0#{x}@email.fr"
-else
-mail << "jean.dupont.#{x}@email.fr"
-end
-x += 1
-end
-puts mail
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+print "> "
+user_number = gets.chomp.to_i
+nb = 1
+ if user_number > 25
+ puts "Entre 1 et 25 petit gourmand"
+ print "> "
+ user_number = gets.chomp.to_i
+ puts "voici la pyramide :"
+	while ( nb <= user_number && nb < 26 )
+	puts "#" * nb
+	nb = nb + 1
+	end
+ else
+ puts "voici la pyramide :"
+ while ( nb <= user_number && nb < 26 )
+ puts "#" * nb
+ nb = nb + 1
+ end
+ end
