@@ -1,4 +1,4 @@
-puts = "Quel est ton nom ?"
+puts "Quelle est ton année de naissance ?"
 print "> "
-user_name = gets.chomp
-puts "Bonjour #{user_name}"
+user_birthyear = gets.chomp.to_i
+puts "Tu avais #{ 2017 - user_birthyear.to_i } ans en 2017"
